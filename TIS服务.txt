@@ -1,0 +1,448 @@
+1、//  任务申请页-各选择框的选择项
+http://192.168.1.98:8083/riskdataservice/rest/tis/select1
+POST请求
+参数：{"rootcode":"5010100"}
+结果：
+{
+    "项目签订时项目状态": [
+        {
+            "code": 301,
+            "value": "未开工工程"
+        },
+        {
+            "code": 302,
+            "value": "已开工工程"
+        },
+        {
+            "code": 303,
+            "value": "已竣工工程"
+        }
+    ],
+    "定期提醒的间隔时间": [
+        {
+            "code": 401,
+            "value": "1周"
+        },
+        {
+            "code": 402,
+            "value": "2周"
+        },
+        {
+            "code": 403,
+            "value": "1个月"
+        },
+        {
+            "code": 404,
+            "value": "2个月"
+        },
+        {
+            "code": 405,
+            "value": "3个月"
+        }
+    ],
+    "机构名称": [
+        {
+            "code": "4",
+            "value": "aaa29"
+        }
+    ],
+    "项目类型": [
+        {
+            "code": 201,
+            "value": "公路工程"
+        },
+        {
+            "code": 202,
+            "value": "桥梁工程"
+        },
+        {
+            "code": 203,
+            "value": "信息工程"
+        },
+        {
+            "code": 204,
+            "value": "电力工程"
+        },
+        {
+            "code": 205,
+            "value": "文物建筑保护及修复工程"
+        },
+        {
+            "code": 206,
+            "value": "铁路工程"
+        },
+        {
+            "code": 207,
+            "value": "管线工程"
+        },
+        {
+            "code": 208,
+            "value": "隧道工程"
+        },
+        {
+            "code": 209,
+            "value": "轨道交通工程"
+        },
+        {
+            "code": 210,
+            "value": "水工工程"
+        },
+        {
+            "code": 211,
+            "value": "其他市政配套工程"
+        },
+        {
+            "code": 212,
+            "value": "工业厂房工程"
+        },
+        {
+            "code": 213,
+            "value": "场馆工程"
+        },
+        {
+            "code": 214,
+            "value": "商品住宅工程"
+        },
+        {
+            "code": 215,
+            "value": "保障性住宅工程"
+        },
+        {
+            "code": 216,
+            "value": "其他民用建筑工程"
+        }
+    ],
+    "项目性质": [
+        {
+            "code": 101,
+            "value": "商务部援外项目"
+        },
+        {
+            "code": 102,
+            "value": "国内IDI项目"
+        }
+    ]
+}
+
+2、// TIS报告录入页-各选择框的选择项
+http://192.168.1.98:8083/riskdataservice/rest/tis/select2
+POST请求
+参数：{"xmxz":"商务部援外项目"}
+结果：
+{
+    "columns": null,
+    "rs": [
+        {
+            "tis合约": [
+                {
+                    "code": 701,
+                    "value": "TIS服务计划"
+                },
+                {
+                    "code": 702,
+                    "value": "风险初步分析报告"
+                }
+            ],
+            "专项报告": [
+                {
+                    "code": 801,
+                    "value": "风险初步查勘报告"
+                },
+                {
+                    "code": 802,
+                    "value": "勘察设计风险评估报告"
+                },
+                {
+                    "code": 803,
+                    "value": "施工质量风险评估报告"
+                },
+                {
+                    "code": 804,
+                    "value": "竣工风险评估报告"
+                }
+            ],
+            "日常巡查报告": [
+                {
+                    "code": 1001,
+                    "value": "日常巡查报告"
+                },
+                {
+                    "code": 1002,
+                    "value": "事故报告"
+                },
+                {
+                    "code": 1003,
+                    "value": "缺陷清单和未整改报告"
+                }
+            ]
+        }
+    ],
+    "code": 200,
+    "pagenum": -1,
+    "pagerows": -1,
+    "rowcount": -1,
+    "tag": null
+}
+
+3、// 门户-模糊查询部分-各选择框的选择项
+http://192.168.1.98:8083/riskdataservice/rest/tis/select3
+POST请求
+参数：无
+结果：
+{
+    "columns": null,
+    "rs": [
+        {
+            "项目签订时项目状态": [
+                {
+                    "code": "全部",
+                    "value": "全部"
+                },
+                {
+                    "code": 301,
+                    "value": "未开工工程"
+                },
+                {
+                    "code": 302,
+                    "value": "已开工工程"
+                },
+                {
+                    "code": 303,
+                    "value": "已竣工工程"
+                }
+            ],
+            "项目类型": [
+                {
+                    "code": "全部",
+                    "value": "全部"
+                },
+                {
+                    "code": 201,
+                    "value": "公路工程"
+                },
+                {
+                    "code": 202,
+                    "value": "桥梁工程"
+                },
+                {
+                    "code": 203,
+                    "value": "信息工程"
+                },
+                {
+                    "code": 204,
+                    "value": "电力工程"
+                },
+                {
+                    "code": 205,
+                    "value": "文物建筑保护及修复工程"
+                },
+                {
+                    "code": 206,
+                    "value": "铁路工程"
+                },
+                {
+                    "code": 207,
+                    "value": "管线工程"
+                },
+                {
+                    "code": 208,
+                    "value": "隧道工程"
+                },
+                {
+                    "code": 209,
+                    "value": "轨道交通工程"
+                },
+                {
+                    "code": 210,
+                    "value": "水工工程"
+                },
+                {
+                    "code": 211,
+                    "value": "其他市政配套工程"
+                },
+                {
+                    "code": 212,
+                    "value": "工业厂房工程"
+                },
+                {
+                    "code": 213,
+                    "value": "场馆工程"
+                },
+                {
+                    "code": 214,
+                    "value": "商品住宅工程"
+                },
+                {
+                    "code": 215,
+                    "value": "保障性住宅工程"
+                },
+                {
+                    "code": 216,
+                    "value": "其他民用建筑工程"
+                }
+            ],
+            "项目性质": [
+                {
+                    "code": "全部",
+                    "value": "全部"
+                },
+                {
+                    "code": 101,
+                    "value": "商务部援外项目"
+                },
+                {
+                    "code": 102,
+                    "value": "国内IDI项目"
+                }
+            ]
+        }
+    ],
+    "code": 200,
+    "pagenum": -1,
+    "pagerows": -1,
+    "rowcount": -1,
+    "tag": null
+}
+
+
+
+4、// 自动录入按钮
+http://192.168.1.98:8083/riskdataservice/rest/tis/enter
+POST请求
+参数：{"bdh":"ANACD0835018Q000006M"}
+结果：{
+    "columns": null,
+    "rs": [
+        {
+            "bxfl": 0.0011629383,
+            "xmmc": null,
+            "xmdz": "江西省吉安市新干县三湖镇上游1.5km",
+            "be": 274101276.4,
+            "bbxr": null,
+            "bdqdrq": "2018-02-07 00:00:00",
+            "xmzbf": 1002574.72,
+            "bdzzsxrq": null,
+            "tbrmc": "江西省港航建设投资有限公司"
+        }
+    ],
+    "code": 200,
+    "pagenum": -1,
+    "pagerows": -1,
+    "rowcount": -1,
+    "tag": null
+}
+
+5、// 任务申请页-提交按钮
+http://192.168.1.98:8083/riskdataservice/rest/tis/submit
+POST请求
+参数：{
+	"companycode":"001",
+    "policy_no": "ANACD0835018Q000006M",
+    "premium_rate": 0.0011629383,
+    "item_name": "",
+    "item_address": "江西省吉安市新干县三湖镇上游1.5km",
+    "insured_amount": 274101276.4,
+    "assured": "",
+    "signing_date": "2018-02-07 00:00:00",
+    "total_premium": 1002574.72,
+    "effective_date":"2018-02-07 00:00:00",
+    "policy_holder": "江西省港航建设投资有限公司",
+    "item_property":"国内IDI项目",
+    "item_type":"建筑工程",
+    "signature_state":"未开工工程",
+    "active_time":"2018-02-07 00:00:00",
+    "reminder_date":"2018-02-07 00:00:00",
+    "time_span":"1周",
+    "tis_institution_name":"哈尔滨研发中心",
+    "duty_deadline_waiver":"念佛is非农",
+    "tis_signing_time":"2018-02-07 00:00:00",
+    "tis_intervention_state":"项目已竣工"
+}
+结果：{
+    "columns": null,
+    "rs": null,
+    "code": 200,
+    "pagenum": -1,
+    "pagerows": -1,
+    "rowcount": -1,
+    "tag": null
+}
+
+
+6、// 分公司评价人员页面-报告评价-大任务列表
+http://192.168.1.98:8083/riskdataservice/rest/tis/ftable1
+POST请求
+参数：无
+结果：
+
+7、// 分公司结束大任务列表
+http://192.168.1.98:8083/riskdataservice/rest/tis/ftable2
+POST请求
+参数：{"companycode":"002"}参数必须有companycode，模糊查询另外再加
+结果：
+{
+    "columns": null,
+    "rs": [
+        {
+            "policy_no": "SLKDJNCFLKSDNC35DD",
+            "item_type": "建筑工程",
+            "policy_holder": "江西省港航建设投资有限公司",
+            "tis_institution_name": "哈尔滨研发中心",
+            "state": "结束待审核",
+            "item_property": "国内IDI项目"
+        }
+    ],
+    "code": 200,
+    "pagenum": -1,
+    "pagerows": -1,
+    "rowcount": -1,
+    "tag": null
+}
+
+8、// 总公司评价人员页面-报告评价-大任务列表
+http://192.168.1.98:8083/riskdataservice/rest/tis/ztable1
+POST请求
+参数：无
+结果：
+
+9、// 总公司评价人员页面-报告评价-大任务列表
+http://192.168.1.98:8083/riskdataservice/rest/tis/ztable2
+POST请求
+参数：无
+结果：
+{
+    "columns": null,
+    "rs": [
+        {
+            "policy_no": "SLKDJNCFLKSDNC35DD",
+            "item_name": null,
+            "tis_institution_name": "哈尔滨研发中心",
+            "state": "结束待审核",
+            "item_property": "国内IDI项目"
+        }
+    ],
+    "code": 200,
+    "pagenum": -1,
+    "pagerows": -1,
+    "rowcount": -1,
+    "tag": null
+}
+
+10、// 点击各按钮-大任务状态变化
+http://192.168.1.98:8083/riskdataservice/rest/tis/changestate1
+POST请求
+参数：{
+	"policy_no":"ANACD0835018Q000006M",
+	"btname":"结束任务"
+}
+结果：
+
+11、// // 点击各按钮-小任务及大任务状态变化
+http://192.168.1.98:8083/riskdataservice/rest/tis/changestate2
+POST请求
+参数：{
+	"policy_no":"ANACD0835018Q000006M",
+	"report_code":"6",
+	"btname":"结束任务"
+}
+结果：

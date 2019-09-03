@@ -30,3 +30,5 @@ select policy_no,max(orderid) as orderid  from tis_taskflow t  group by policy_n
   tt.policy_no = t2.policy_no and tt.orderid = t2.orderid) t3 where  ttt.policy_no = t3.policy_no) t4 where tttt.typecode=t4.state 
   
  select * from ()t5 where state="±¨¸æ´ý·Ö¹«Ë¾ÆÀ¼Û"
+
+new write°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡

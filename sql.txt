@@ -1,7 +1,7 @@
-select max(t.orderid) from survey.tis_taskstateflow t where t.policy_no = '' ;
+ï»¿select max(t.orderid) from survey.tis_taskstateflow t where t.policy_no = '' ;
 
 
-select * from TIS_INSTITUTION t£»
+select * from TIS_INSTITUTION tï¼›
 
 select * from tis_iteminfo ;
 
@@ -29,6 +29,6 @@ select policy_no,max(orderid) as orderid  from tis_taskflow t  group by policy_n
   select policy_no,tis_institution_name,item_property,item_name,field_name from tis_codetable tttt,( select ttt.policy_no,ttt.tis_institution_name,ttt.item_property,ttt.item_name, state from tis_taskinfo ttt, (  select tt.policy_no,state from tis_taskflow tt,(select policy_no,max(orderid) as orderid  from tis_taskflow t  group by policy_no) t2  where 
   tt.policy_no = t2.policy_no and tt.orderid = t2.orderid) t3 where  ttt.policy_no = t3.policy_no) t4 where tttt.typecode=t4.state 
   
- select * from ()t5 where state="±¨¸æ´ı·Ö¹«Ë¾ÆÀ¼Û"
+ select * from ()t5 where state="æŠ¥å‘Šå¾…åˆ†å…¬å¸è¯„ä»·"
 
-new write°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡°¡
+new writeå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Šå•Š
